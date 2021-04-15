@@ -274,7 +274,7 @@ html{
 /*IMAGEN PRINCIPAL*/
 #override #seccion-biblioteca{
     height: 600px;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/otros/biblioteca.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("img/otros/biblioteca.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -342,7 +342,7 @@ html{
 /*SECCIÓN BOLETÍN MENSUAL*/
 #override #seccion-boletin{
     height: 600px;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/otros/boletin.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("img/otros/boletin.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -410,7 +410,7 @@ html{
 /*SECCIÓN REVISTA*/
 #override #seccion-revista{
     height: 600px;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/otros/revista.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("img/otros/revista.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/*GLOBAL*/
+*{
+ box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#override{
+    padding:0px;
+    margin:0px;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+/*BARRA DE NAVEGACIÓN*/
+#override nav{
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    background-color:rgba(0,0,0,0.5);
+    color:black;
+    position:absolute;
+    z-index: 2;
+    width: 100%;
+}
+@media(max-width:1200px){
+    #override nav{
+        background-color:rgba(3,18,14);
+        position:relative;
+    }
+}
+#override nav a{
+    color:#fff;
+}
+#override nav a:hover{
+    color:rgba(216,35,39);
+}
+#override nav img{
+    height: 120px;
+}
+@media(max-width:992px){
+    #override nav img{
+        margin-left: 60px;
+    }
+}
+#override nav .active{
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-color: #1C7293;
+}
+/*PIE DE PÁGINA*/
+#override footer{
+    background-color: rgb(3,18,14);
+    color:#fff;
+    font-size: 15px;
+    padding:15px;
+}
+#override footer img{
+    height: 200px;
+}
+#override footer p{
+    margin:0px;
+}
+#override footer ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+#override footer ul svg{
+    fill:#fff;
+    width: 20px;
+    height: 20px;
+}
+#override footer ul svg:hover{
+    fill:#1C7293;
+    transform: scale(1.15);
+}
+#override footer ul{
+    display: flex;
+    justify-content: center;
+}
+#override footer li{
+    margin:0 5px;
+}
+/*PÁGINA DE INICIO*/
+/*GLOBAL*/
+#override main h2{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 37px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#override main p{
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
+#override section{
+    padding:80px 0px;
+}
+#override main .boton{
+    display:block;
+    text-decoration: none;
+    border-radius: 5px;
+    width:40%;
+    margin:0 auto;
+    text-align: center;
+    background-color: rgb(3,18,14);
+    color:#fff;
+    padding:10px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+}
+#override main .boton:hover{
+    background-color: rgba(3,18,14,0.9);
+    transform: scale(1.02);
+}
+@media(max-width:768px){
+    #override main .boton{
+        width:80%;
+    }
+}
+/*CARRUSEL DE IMÁGENES*/
+#override #carouselExampleCaptions img{
+    filter:brightness(50%);
+}
+#override .carousel-caption{    
+    height: 100%;
+}
+#override .carousel-caption h5{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 4rem;
+    padding:0px;
+    margin:0px;
+    padding-top:20px;
+}
+@media(max-width:680px){
+    #override .carousel-caption h5{
+        font-size: 30px;
+    }
+}
+/*SECCIÓN BIOGRAFÍA*/
+#override #seccion-biografia img{
+    float:right;
+    padding:0px 0px 20px 20px;
+}
+
+/*SECCIÓN BIENVENIDA*/
+#override #seccion-bienvenida{
+    background-color: rgba(28,114,147,0.1);
+}
+#override #seccion-bienvenida img{
+    width:50%;
+    float:left;
+    padding: 5px 20px 0px 0px;
+}
+#override #seccion-bienvenida .caja-redes{
+    background-color: rgb(216,35,14);
+    border-radius: 5px;
+    padding:20px;
+    color:#fff;
+}
+#override #seccion-bienvenida .caja-redes p{
+    margin:0px 0px 10px;
+    padding:0px;
+    font-family: 'Fjalla One', sans-serif;
+}
+#override #seccion-bienvenida ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+#override #seccion-bienvenida svg{
+    width:25px;
+    height:25px;
+    margin:0 10px;
+    fill:#fff;
+}
+#override #seccion-bienvenida svg:hover{
+    fill:#ABC4AB;
+    transform: scale(1.1);
+}
+
+/*SECCIÓN MISIÓN*/
+#override #seccion-mision img{
+    height:250px;
+    margin:0px 20px;
+}
+@media(max-width:768px){
+    #override #seccion-mision #logo-unsaac{
+        height:auto;
+    }
+}
+
+/*SECCIÓN VISIÓN*/
+#override #seccion-vision{
+    background-color: rgba(28,114,147,0.1);
+}
+#override #seccion-vision .caja-vision{    
+    border-radius: 5px;
+    background-color: #fff;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95%;
+}
+#override #seccion-vision .caja-vision img{    
+    width:200px;
+}
+#override #seccion-vision .caja-vision p{    
+    text-align: center;
+}
+/*SECCIÓN NOSOTROS*/
+#override #seccion-nosotros .caja-nosotros{
+    border-style: solid;
+    border-color:rgb(28,114,147);
+    border-radius: 10px;
+    padding: 10px 20px;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#override #seccion-nosotros .caja-nosotros img{
+    width: 80%;
+}
+/*SECCIÓN JUNTA DIRECTIVA*/
+#override #seccion-junta{
+    background-color: rgba(28,114,147,0.1);
+}
+#override #seccion-junta img{
+    width:250px;
+    height:250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#override #seccion-junta p{
+    text-align: center;
+    margin:0;
+}
+#override #seccion-junta .nombre{
+    font-weight: bold;
+}
+#override #seccion-junta .caja-junta{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/*MEDIA QUERIES SECCIONES*/
+@media(max-width:994px){
+    #override #seccion-biografia img{
+        float:none;
+        width:100%;
+        padding: 10px 0px 20px;
+        margin:0 auto;
+    }
+    #override #seccion-bienvenida img{
+        float:none;
+        width:100%;
+        padding: 10px 0px 20px;
+        margin:0 auto;
+    }
+}
+
+/*SECCIÓN BIBLIOTECA*/
+/*IMAGEN PRINCIPAL*/
+#override #seccion-biblioteca{
+    height: 600px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/otros/biblioteca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+#override #seccion-biblioteca h2{
+    color:#fff;
+    font-size: 3.5rem;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+}
+@media(max-width:768px){
+    #override #seccion-biblioteca{
+        height: 50%;
+    }
+    #override #seccion-biblioteca h2{
+        font-size: 30px;
+    }
+}
+/*SECCIÓN DE LIBROS*/
+#override #seccion-libros{
+    background-color: rgba(28,114,147,0.1);
+    padding-top:50px;
+    padding-bottom: 20px;
+}
+#override #seccion-libros h2{
+    margin-bottom: 50px;
+}
+#override #seccion-libros h3{
+    font-size:30px;
+    font-weight: bold;
+}
+#override #seccion-libros img{
+    width:80px;
+}
+#override #seccion-libros .caja-libro{
+    background-color: rgba(158,179,194,0.5);
+    padding:40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#override #seccion-libros .caja-libro a{
+    display:block;
+    text-decoration: none;
+    background-color: rgb(28,114,147);
+    padding:5px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    width:200px;
+}
+#override #seccion-libros .caja-libro a:hover{
+    background-color: rgba(28,114,147,0.8);
+}
+#override #seccion-libros .header-libro{
+    border-style: solid;
+    border-color:rgb(28,114,147);
+    padding:20px;
+    margin-bottom: 20px;
+}
+
+/*SECCIÓN BOLETÍN MENSUAL*/
+#override #seccion-boletin{
+    height: 600px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/otros/boletin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+#override #seccion-boletin h2{
+    color:#fff;
+    font-size: 3.5rem;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+}
+@media(max-width:768px){
+    #override #seccion-boletin{
+        height: 50%;
+    }
+    #override #seccion-boletin h2{
+        font-size: 30px;
+    }
+}
+/*SECCIÓN DE ARCHIVO DE BOLETINES*/
+#override #archivo-boletin{
+    background-color: rgba(28,114,147,0.1);
+    padding-top:50px;
+    padding-bottom: 20px;
+}
+#override #archivo-boletin h2{
+    margin-bottom: 50px;
+}
+#override #archivo-boletin h3{
+    font-size:30px;
+    font-weight: bold;
+}
+#override #archivo-boletin img{
+    width:80px;
+}
+#override #archivo-boletin .caja-boletin{
+    background-color: rgba(158,179,194,0.5);
+    padding:40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#override #archivo-boletin .caja-boletin a{
+    display:block;
+    text-decoration: none;
+    background-color: rgb(21, 96, 100);
+    padding:5px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    width:200px;
+}
+#override #archivo-boletin .caja-boletin a:hover{
+    background-color: rgba(21, 96, 100,0.8);
+}
+#override #archivo-boletin .header-boletin{
+    border-style: solid;
+    border-color:rgb(21, 96, 100);
+    padding:20px;
+    margin-bottom: 20px;
+}
+
+/*SECCIÓN REVISTA*/
+#override #seccion-revista{
+    height: 600px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/otros/revista.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+#override #seccion-revista h2{
+    color:#fff;
+    font-size: 3.5rem;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+}
+@media(max-width:768px){
+    #override #seccion-revista{
+        height: 50%;
+    }
+    #override #seccion-revista h2{
+        font-size: 30px;
+    }
+}
+/*SECCIÓN DE ARCHIVO DE REVISTAS*/
+#override #archivo-revista{
+    background-color: rgba(28,114,147,0.1);
+    padding-top:50px;
+    padding-bottom: 20px;
+}
+#override #archivo-revista h2{
+    margin-bottom: 50px;
+}
+#override #archivo-revista h3{
+    font-size:30px;
+    font-weight: bold;
+}
+#override #archivo-revista img{
+    width:80px;
+}
+#override #archivo-revista .caja-revista{
+    background-color: rgba(158,179,194,0.5);
+    padding:40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#override #archivo-revista .caja-revista a{
+    display:block;
+    text-decoration: none;
+    background-color: rgb(46, 41, 78);
+    padding:5px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    width:200px;
+}
+#override #archivo-revista .caja-revista a:hover{
+    background-color: rgb(46, 41, 78,0.8);
+}
+#override #archivo-revista .header-revista{
+    border-style: solid;
+    border-color:rgb(46, 41, 78,0.8);
+    padding:20px;
+    margin-bottom: 20px;
+}

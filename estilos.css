@@ -374,8 +374,13 @@ html{
     margin-bottom: 50px;
 }
 #override #archivo-boletin h3{
-    font-size:30px;
+    font-size:25px;
     font-weight: bold;
+}
+@media(min-width:1200px){
+    #override #archivo-boletin h3{
+        font-size:30px;
+    }
 }
 #override #archivo-boletin img{
     width:80px;
@@ -403,7 +408,7 @@ html{
 #override #archivo-boletin .header-boletin{
     border-style: solid;
     border-color:rgb(21, 96, 100);
-    padding:20px;
+    padding:10px 0px;
     margin-bottom: 20px;
 }
 
